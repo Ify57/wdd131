@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home -- </title>
     <meta name="author" content="Ifeanyi Oleforo">
-    <link rel="stylesheet" href="style.css">
-    <script src="getdates.js">
-
-    </script>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
@@ -20,10 +16,10 @@
                     <h2>WDD 131: Dynamic Web Fundamentals- Ifeanyi Oleforo</h2>
                 </div>
                 <div class="main_header">
-                    <h3>Linkedlin</h3>
-                    <h3>I-Learn</h3>
-                    <h3>Scripture</h3>
-                    <h3>Final Project</h3>
+                    <h3><a href="#" class="h">Linkedlin</a></h3>
+                    <h3><a href="#" class="h">I-Learn</a></h3>
+                    <h3><a href="#" class="h">Scripture</a></h3>
+                    <h3><a href="#" class="h">Final Project</a></h3>
                 </div>
             </div>
     </header>
@@ -43,14 +39,14 @@
                                     connections with family and friends, which enrich my life and foster a sense of
                                     belonging. With a desire to make a positive impact, I aspire to contribute to my
                                     community and beyond.</p>
-                                <img src="profile.jpeg" width="200" height="144" alt="NIGERIAN FLAG">
+                                <img src="images/profile.jpeg" width="200" height="144" alt="NIGERIAN FLAG">
                             </div>
                             <h2 id="country">Imo, Nigeria</h2>
                             <center>
                                 <hr>
                             </center>
                             <div class="country">
-                                <img src="NIGERIANFLAG.png" alt="NIGERIAN FLAG">
+                                <img src="images/NIGERIANFLAG.png" alt="NIGERIAN FLAG">
                                 <p>Imo State, located in southeastern Nigeria, is known for its rich Igbo culture and
                                     vibrant traditions. The capital, Owerri, serves as a commercial hub, thriving on
                                     agriculture and small businesses. The state celebrates numerous festivals, with the
@@ -84,10 +80,12 @@
         </main>
     <footer>
         <div class="footer">
-            <p>&copy; Oleforo Ifeanyi <span class="currentyear"></span> Nigeria</p>
-            <p id="lastModified">Last modification:</p>
+            <!-- &copy; Oleforo Ifeanyi <span class="currentyear"></span> Nigeria -->
+            <p>&copy;<span id="year"></span><b> Ifeanyi Oleforo</b> Nigeria</p>
+            <p id="lastModified">Last modification: <span id="day"></span>/<span id="month"></span>/<span id="year2"></span>  <span id="hour"></span>:<span id="minute"></span>:<span id="seconds"></span></p>
             <p></p>
         </div>
+        <script src="/scripts/getdates.js"></script>
     </footer>
 </body>
 
