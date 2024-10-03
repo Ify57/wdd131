@@ -1,4 +1,4 @@
-let date = new Date();
+const date = new Date();
 const year = document.getElementById('year').innerHTML = date.getFullYear();
 const day = document.getElementById('day').innerHTML = date.getDay()
 const month = document.getElementById('month').innerHTML = date.getMonth()
