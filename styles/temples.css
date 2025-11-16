@@ -8,19 +8,14 @@ header{
     background: #3c0a64;
     color: #ffffff;
     display: flex;
-
-    /* height: 10vh; */
 }
 .header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
-.hamburger img{
-    width: 30px;
-    height: 30px;
-}
+
 .home_logo{
     display: flex;
     justify-content: center;
@@ -39,4 +34,16 @@ header{
 .small_ul{
     list-style: none;
     display: none;
+    background: #ffffff;
+    position: fixed;
+
+}
+.hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
 }

@@ -1,6 +1,6 @@
-const menu = document.getElementById('hamburger');
-const small_ul = document.querySelector('.small_ul');
+function clickedMenu(){
+        const hamburger  = document.querySelector('.hamburger');
+        const navMenu    = document.querySelector('.small_ul');
+        navMenu.style.display = 'block';
 
-menu.addEventListener('click', () =>{
-        small_ul.classList.toggle('small_ul_show');
-})
+}
