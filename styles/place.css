@@ -1,0 +1,36 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: green;
+    color: whitesmoke;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#small-image{
+    width: 100%;
+    padding-top: 10px;
+
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.data h2, .Weather h2{
+    padding-bottom: 20px;
+}
+.Weather{
+    padding-top: 20px;
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}

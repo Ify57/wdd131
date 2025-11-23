@@ -4,3 +4,5 @@ function clickedMenu(){
         navMenu.style.display = 'block';
 
 }
+Array = [1,1,1,2,3]
+Array.las
