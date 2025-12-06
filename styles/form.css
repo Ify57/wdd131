@@ -56,3 +56,9 @@ footer{
     margin-top: 20px;
     color: rgb(255, 255, 255);
 }
+@media screen and(max-width: 500px){
+    form{
+        margin-bottom: 100%;
+    }
+    
+}
