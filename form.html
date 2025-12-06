@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/script.js"></script>
+    <script src="scripts/getdates.js" defer ></script>
+</head>
+<body>
+
+<header>
+    <h1>Product Review Form</h1>
+</header>
+
+<main>
+    <form action="review.html" method="get">
+
+        <!-- Product Name -->
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <!-- Options created dynamically by JS -->
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset>
+            <legend>Overall Rating</legend>
+            
+            <label>
+                <input type="radio" name="rating" id="rating1" value="1" required>
+                ☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" id="rating2" value="2" required>
+                ☆☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" id="rating3" value="3" required>
+                ☆☆☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" id="rating4" value="4" required>
+                ☆☆☆☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" id="rating5" value="5" required>
+                ☆☆☆☆☆
+            </label>
+        </fieldset>
+
+        <!-- Installation Date -->
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features (check all that apply)</legend>
+
+            <label>
+                <input type="checkbox" name="features" value="durable" id="durable">
+                Durability
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="eco" id="eco">
+                Ease of Use
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="lightweight" id="lightweight">
+                Performance
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="compact" id="compact">
+                Design
+            </label>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="reviewText">Written Review (optional)</label>
+        <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+
+        <!-- Username -->
+        <label for="username">Your Name (optional)</label>
+        <input type="text" id="username" name="username">
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Review">
+
+    </form>
+</main>
+
+<!-- <footer>
+    <p>&copy; 2025 Your Name – Web Development Course</p>
+</footer> -->
+
+
+    <footer>
+        <div class="footer">
+            <!-- &copy; Oleforo Ifeanyi <span class="currentyear"></span> Nigeria -->
+            <p>&copy; <span id="year"></span><b> Ifeanyi Oleforo</b> Nigeria</p>
+            <p id="lastModified">Last modification: <span id="day"></span>/<span id="month"></span>/<span id="year2"></span>  <span id="hour"></span>:<span id="minute"></span>:<span id="seconds"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

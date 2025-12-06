@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+<header>
+    <h1>Review Submitted</h1>
+</header>
+
+<main>
+    <section id="confirmation"></section>
+
+    <p id="reviewCount"></p>
+</main>
+
+<footer>
+    <p>&copy; 2025 Your Name – Web Development Course</p>
+</footer>
+
+<script>
+    // === show submitted form values === //
+    const params = new URLSearchParams(window.location.search);
+
+    let output = "<h2>Your Review Details</h2><ul>";
+    params.forEach((value, key) => {
+        output += `<li><strong>${key}:</strong> ${value}</li>`;
+    });
+    output += "</ul>";
+
+    document.getElementById("confirmation").innerHTML = output;
+
+    // === LocalStorage Review Counter === //
+    let count = localStorage.getItem("reviewCount");
+
+    if (!count) count = 0;
+
+    count++;
+    localStorage.setItem("reviewCount", count);
+
+    document.getElementById("reviewCount").textContent =
+        "Total reviews submitted on this device: " + count;
+</script>
+
+</body>
+</html>
