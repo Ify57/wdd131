@@ -58,7 +58,7 @@ footer{
 }
 @media screen and(max-width: 500px){
     form{
-        margin-bottom: 100%;
+        margin-top: 100%;
     }
     
 }
