@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eco-Friendly Travel Tips</title>
+  <meta name="description" content="Actionable eco-friendly travel tips to reduce your footprint and travel responsibly." />
+    <link rel="stylesheet" href="assignment1.css">
+    <script src="tips.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="first">
+            <h3>Eco-Friendly</h3>
+            <div class='hamburger'>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="assignment6.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="wrap">
+    <header>
+      <h1>Eco-Friendly Travel Tips</h1>
+      <p>Practical, tested tips to reduce your environmental impact while exploring the world.</p>
+    </header>
+
+    <div class="controls" aria-hidden="false">
+      <label for="catSelect" class="hidden-visually">Filter category</label>
+      <select id="catSelect" aria-label="Filter by category">
+        <option value="all">All categories</option>
+      </select>
+
+      <label for="search" class="hidden-visually">Search tips</label>
+      <input type="search" id="search" placeholder="Search tips or keywords" aria-label="Search tips">
+
+      <button id="clearFilters" class="ghost" type="button">Clear</button>
+      <button id="saveBtn" type="button">Save Favorites</button>
+
+      <div id="favCount" aria-live="polite" style="margin-left:auto;color:var(--muted)"></div>
+    </div>
+
+    <main aria-live="polite">
+      <section id="tipsGrid" class="grid" aria-label="Eco travel tips list">
+        <!-- cards injected by JS -->
+      </section>
+      <div id="noResults" class="empty" style="display:none">No tips found. Try another search or category.</div>
+    </main>
+
+    <footer style="margin-top:1.5rem;color:var(--muted);font-size:.95rem">
+      <p>&copy; 2025 Eco-Friendly Travel Guide • Tips curated for sustainable travel</p>
+    </footer>
+
+  </div>
+    <script src="assignment.js" defer></script>
+
+ <footer>
+        <div class="footer">
+            <p>© 2025 Eco-Friendly. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
