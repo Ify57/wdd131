@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places I Have Been To</title>
+
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
-    <title>Places i have been to</title>
+    <script src="scripts/place.js" defer></script><meta name="description" content="WEEk 3 assignment - A webpage about Nigeria, including data and weather information.">
+
+    <meta name="author" content="ifeanyi oleforo">
 </head>
 
 <body>
     <header>
         <h1>Nigeria</h1>
     </header>
-    <main>
-        <!-- <img src="images/nupo-deyon-daniel-9ySEZ-ugtJA-unsplash.jpg" id="small-image" alt=""> -->
 
-        <picture id="small-image">
-            <source media="(max-width: 600px)" srcset="images/nupo-deyon-daniel-9ySEZ-ugtJA-unsplash.jpg"
-                id="small-image" style="width: 100px;">
-            <source media="(max-width: 500px)" srcset="images/NIGERIANFLAG.png">
-            <img src="images/NIGERIANFLAG.png" alt="" id="small-image">
+    <main>
+        <!-- Hero image using srcset -->
+        <picture>
+            <source
+                media="(max-width: 500px)"
+                srcset="images/nupo-deyon-daniel-9ySEZ-ugtJA-unsplash.webp">
+            <source
+                media="(min-width: 501px)"
+                srcset="images/NIGERIANFLAG.webp">
+            <img
+                id="small-image"
+                src="images/NIGERIANFLAG.webp"
+                alt="Scenic view representing Nigeria">
         </picture>
-        <div class="small-div"></div>
 
         <div class="container1">
-            <div class="data">
+            <!-- Data Section -->
+            <section class="data">
                 <h2>Data</h2>
                 <h4><b>Area</b>: 923,768 km²</h4>
                 <h4><b>Population</b>: ~237.5 m</h4>
-                <h4><b>Capital</b>: Abuja </h4>
-                <h4><b>Language</b>: English (official) </h4>
+                <h4><b>Capital</b>: Abuja</h4>
+                <h4><b>Language</b>: English (official)</h4>
                 <h4><b>Currency</b>: Naira (₦, NGN)</h4>
-                <h4><b>TimeZone</b>: UTC +01:00</h4>
-                <h4><b>Calling code</b>: +234 </h4>
-                <h4><b>Internet TLD</b>: .ng </h4>
-            </div>
-            <div class="Weather">
-                <h2>Weather </h2>
-                <h4><b>Temperature</b>: ~ 26.9 °C </h4>
-                <h4><b>Conditions</b>:T wet-and-dry</h4>
-                <h4><b>Wind</b>: ~ 9.3 km/h </h4>
-                <h4><b>Wind Chill</b>: TAN </h4>
-            </div>
+                <h4><b>Time Zone</b>: UTC +01:00</h4>
+                <h4><b>Calling Code</b>: +234</h4>
+                <h4><b>Internet TLD</b>: .ng</h4>
+            </section>
 
+            <!-- Weather Section -->
+            <section class="Weather">
+                <h2>Weather</h2>
+                <h4><b>Temperature</b>: 26.9 °C</h4>
+                <h4><b>Conditions</b>: Tropical wet-and-dry</h4>
+                <h4><b>Wind</b>: 9.3 km/h</h4>
+                <h4><b>Wind Chill</b>: N/A</h4>
+            </section>
         </div>
-
     </main>
+
     <footer>
         <div class="footer">
             <h3>&copy; 2025 Ifeanyi Oleforo</h3>
             <h3>Nigeria</h3>
-            <h3>Last Modification: 23/11/2025 07.06.10</h3>
+            <h3>Last Modification: </h3>
         </div>
     </footer>
 </body>
-
 </html>

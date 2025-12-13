@@ -12,7 +12,7 @@ const TIPS = [
 // state
 let favorites = loadFavorites(); // object map id->true
 
-document.addEventListener('DOMContentLoaded', () => {
+/document.addEventListener('DOMContentLoaded', () => {
     populateCategoryOptions();
     renderTips(TIPS);
     setupControls();
